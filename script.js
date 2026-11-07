@@ -118,7 +118,7 @@ function render() {
 
 startButton.addEventListener('click', () => {
     modal.style.display = "none"
-    intervalId = setInterval(() => { render() }, 300)
+    intervalId = setInterval(() => { render() }, 200)
 })
 
 restartButton.addEventListener('click', restartGame)
@@ -143,7 +143,7 @@ function restartGame() {
         y: Math.floor(Math.random() * cols)
     }
 
-    intervalId = setInterval(() => { render() }, 300)
+    intervalId = setInterval(() => { render() }, 200)
 
 }
 
